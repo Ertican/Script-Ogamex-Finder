@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "OgameX Galaxy Extension [Ares] - by xZx",
+  "version": "1.2",
+  "description": "OgameX galaxy extension",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://ares.ogamex.net/galaxy/galaxydata?x=*&y=*"],
+      "js": ["galaxy_data_saver.js"]
+    },
+    {
+      "matches": ["https://ares.ogamex.net/home"],
+      "js": ["planet_finder.js"]
+    }
+	]
+}
